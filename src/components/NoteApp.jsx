@@ -75,12 +75,19 @@ class NoteApp extends React.Component {
       <div className="note-app">
         <div className='note-app__header'>
           <h1>Notes</h1>
-          <div className="note-search">
-            <input
+          <div className="note-search "
+          >
+            <input className='search-input text-white'
+              style={{
+                border: '1px solid white',
+                color: 'black',
+                backgroundColor: 'white',
+              }}
               type="text"
               placeholder='Cari catatan...'
               value={searchQuery}
               onChange={this.onSearchHandler}
+              
             />
           </div>
         </div>
